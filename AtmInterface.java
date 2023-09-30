@@ -8,7 +8,7 @@ public class AtmInterface
         int balance = 50000, withdraw, deposit;
         Scanner sc = new Scanner(System.in);
         int pin=7090;
-        System.out.println("Please enter your pin : ");
+        System.out.println("PLEASE ENTER YOUR  CORRECT PIN : ");
         int pass=sc.nextInt();
         int i=1;
         if(pass!=pin)
@@ -16,7 +16,7 @@ public class AtmInterface
             while(true)
             {
                 i++;
-                System.out.println("Wrong pin Number!");
+                System.out.println("WRONG PIN NUMBER PLESE ENTER CORRET ONE!");
                 System.out.println("Please Re-enter your pin (Max. Attempts :- 3) : ");
                 pass=sc.nextInt();
                 if(pass==pin)
@@ -38,12 +38,12 @@ public class AtmInterface
                 System.out.println("Enter 2  Withdraw money");
                 System.out.println("Enter 3  Deposit money");
                 System.out.println("Enter 4  QUIT");
-                System.out.print("Choose what you option: ");
+                System.out.print("Choose CORRET CHOICE: ");
                 int choice = sc.nextInt();
                 switch(choice)
                 {
                     case 1:
-                        System.out.println("Your Balance is : "+balance);
+                        System.out.println("Your avaliable Balance is : "+balance);
                         System.out.println("");
                         break;
                     case 2:
@@ -67,7 +67,7 @@ public class AtmInterface
                         break;
 
                     case 4:
-                        System.out.println("Thank you for using ATM");
+                        System.out.println("Thank you for using ATM!! have a nice day");
                         System.exit(0);
                 }
             }
